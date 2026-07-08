@@ -6,6 +6,7 @@ function AboutMe() {
     <Box
       sx={{
         bgcolor: 'var(--color-bg-secondary)',
+        border: '1px solid var(--color-taupe-light)',
         borderRadius: 2,
         px: { xs: 3, md: 5 },
         py: { xs: 6, md: 10 },

@@ -2,6 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 import { useNavigate } from 'react-router-dom';
 
 function AboutMeSection() {
@@ -10,10 +11,10 @@ function AboutMeSection() {
   return (
     <Card
       sx={{
-        bgcolor: 'var(--color-bg-secondary)',
+        bgcolor: 'var(--color-bg-warm)',
         borderRadius: 2,
         boxShadow: 'none',
-        border: '1px solid var(--color-text-muted)',
+        border: '1px solid var(--color-taupe-light)',
       }}
     >
       <CardContent sx={{ px: { xs: 3, md: 5 }, py: { xs: 4, md: 6 }, textAlign: 'center' }}>
@@ -31,12 +32,13 @@ function AboutMeSection() {
           disableElevation
           onClick={() => navigate('/about')}
           sx={{
-            bgcolor: 'var(--color-button-primary)',
-            color: 'var(--color-accent)',
+            bgcolor: 'var(--color-taupe-dark)',
+            color: 'var(--color-bg-warm)',
+            px: 3,
             transition: 'background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease',
             '&:hover': {
-              bgcolor: 'var(--color-button-hover)',
-              boxShadow: '0 4px 12px rgba(224, 192, 0, 0.5)',
+              bgcolor: 'var(--color-text-primary)',
+              boxShadow: '0 4px 14px rgba(0, 0, 0, 0.2)',
               transform: 'translateY(-1px)',
             },
             '&:active': {
@@ -45,6 +47,9 @@ function AboutMeSection() {
           }}
         >
           더 알아보기
+          <Box component="span" sx={{ color: 'var(--color-primary)', ml: 1 }}>
+            →
+          </Box>
         </Button>
       </CardContent>
     </Card>

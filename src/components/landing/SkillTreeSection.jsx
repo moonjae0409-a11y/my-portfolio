@@ -14,7 +14,7 @@ function SkillTreeSection() {
     <Box
       sx={{
         bgcolor: 'var(--color-bg-primary)',
-        border: '1px solid var(--color-secondary)',
+        border: '1px solid var(--color-taupe-light)',
         borderRadius: 2,
         px: { xs: 3, md: 5 },
         py: { xs: 4, md: 6 },
@@ -39,10 +39,10 @@ function SkillTreeSection() {
               variant="determinate"
               value={skill.level}
               sx={{
-                height: 8,
-                borderRadius: 4,
-                bgcolor: 'var(--color-bg-secondary)',
-                '& .MuiLinearProgress-bar': { bgcolor: 'var(--color-primary)' },
+                height: 6,
+                borderRadius: 3,
+                bgcolor: 'var(--color-bg-warm)',
+                '& .MuiLinearProgress-bar': { bgcolor: 'var(--color-taupe-dark)' },
               }}
             />
           </Grid>

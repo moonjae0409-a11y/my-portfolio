@@ -8,7 +8,7 @@ function IdeaSection() {
   return (
     <Box
       sx={{
-        bgcolor: 'var(--color-accent-green-bg)',
+        bgcolor: 'var(--color-bg-secondary)',
         borderRadius: 2,
         px: { xs: 3, md: 5 },
         py: { xs: 4, md: 6 },
@@ -29,13 +29,13 @@ function IdeaSection() {
             <Box
               sx={{
                 bgcolor: 'var(--color-bg-primary)',
-                borderTop: '3px solid var(--color-accent-green)',
+                borderTop: '2px solid var(--color-taupe-dark)',
                 borderRadius: 1,
                 height: 140,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: 'var(--color-text-secondary)',
+                color: 'var(--color-taupe-light)',
               }}
             >
               Idea {idea}

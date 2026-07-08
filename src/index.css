@@ -28,6 +28,11 @@
   --color-accent-green-bg: #EAF1EC;
   --color-accent-blue-bg: #EAF3FB;
 
+  /* Neutral Minimal Premium Colors */
+  --color-taupe-dark: #6B5D52;
+  --color-taupe-light: #A8998C;
+  --color-bg-warm: #F3EEE7;
+
   color-scheme: light dark;
 }
 
@@ -45,6 +50,9 @@
     --color-accent-green: #6FA787;
     --color-accent-green-bg: #1E2B24;
     --color-accent-blue-bg: #182430;
+    --color-taupe-dark: #C9BBAE;
+    --color-taupe-light: #8A7A6D;
+    --color-bg-warm: #2A2521;
   }
 }
 
@@ -61,6 +69,9 @@
   --color-accent-green: #6FA787;
   --color-accent-green-bg: #1E2B24;
   --color-accent-blue-bg: #182430;
+  --color-taupe-dark: #C9BBAE;
+  --color-taupe-light: #8A7A6D;
+  --color-bg-warm: #2A2521;
 }
 
 /* CSS 초기화 */

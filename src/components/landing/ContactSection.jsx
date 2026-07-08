@@ -8,7 +8,8 @@ function ContactSection() {
   return (
     <Box
       sx={{
-        bgcolor: 'var(--color-accent-blue-bg)',
+        bgcolor: 'var(--color-bg-warm)',
+        border: '1px solid var(--color-taupe-light)',
         borderRadius: 2,
         px: { xs: 3, md: 5 },
         py: { xs: 4, md: 6 },
@@ -31,12 +32,12 @@ function ContactSection() {
           variant="contained"
           disableElevation
           sx={{
-            bgcolor: 'var(--color-button-primary)',
-            color: 'var(--color-accent)',
+            bgcolor: 'var(--color-taupe-dark)',
+            color: 'var(--color-bg-warm)',
             transition: 'background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease',
             '&:hover': {
-              bgcolor: 'var(--color-button-hover)',
-              boxShadow: '0 4px 12px rgba(224, 192, 0, 0.5)',
+              bgcolor: 'var(--color-text-primary)',
+              boxShadow: '0 4px 14px rgba(0, 0, 0, 0.2)',
               transform: 'translateY(-1px)',
             },
             '&:active': {
@@ -45,6 +46,9 @@ function ContactSection() {
           }}
         >
           보내기
+          <Box component="span" sx={{ color: 'var(--color-primary)', ml: 1 }}>
+            →
+          </Box>
         </Button>
       </Stack>
     </Box>

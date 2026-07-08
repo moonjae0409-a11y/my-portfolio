@@ -3,6 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import { Link, useLocation } from 'react-router-dom';
 
 const NAV_ITEMS = [
@@ -23,7 +24,7 @@ function Navigation() {
       elevation={0}
       sx={{
         bgcolor: 'var(--color-bg-primary)',
-        borderBottom: '1px solid var(--color-bg-secondary)',
+        borderBottom: '1px solid var(--color-taupe-light)',
         color: 'var(--color-text-primary)',
       }}
     >
@@ -33,11 +34,24 @@ function Navigation() {
           component={Link}
           to="/"
           sx={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 1,
             fontWeight: 700,
-            color: 'var(--color-secondary)',
+            color: 'var(--color-taupe-dark)',
             textDecoration: 'none',
           }}
         >
+          <Box
+            component="span"
+            sx={{
+              width: 6,
+              height: 6,
+              borderRadius: '50%',
+              bgcolor: 'var(--color-secondary)',
+              display: 'inline-block',
+            }}
+          />
           My Portfolio
         </Typography>
         <Tabs
@@ -46,7 +60,7 @@ function Navigation() {
             minHeight: 0,
             '& .MuiTabs-indicator': {
               backgroundColor: 'var(--color-primary)',
-              height: 3,
+              height: 2,
             },
           }}
         >
@@ -59,12 +73,13 @@ function Navigation() {
               to={item.path}
               disableRipple={false}
               sx={{
-                fontWeight: 600,
-                color: 'var(--color-text-secondary)',
+                fontWeight: 500,
+                letterSpacing: '0.02em',
+                color: 'var(--color-taupe-light)',
                 minHeight: 0,
                 transition: 'color 0.2s ease',
                 '&:hover': {
-                  color: 'var(--color-link)',
+                  color: 'var(--color-taupe-dark)',
                 },
                 '&.Mui-selected': {
                   color: 'var(--color-text-primary)',

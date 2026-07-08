@@ -14,7 +14,7 @@ function ProjectsSection() {
   return (
     <Box
       sx={{
-        bgcolor: 'var(--color-bg-secondary)',
+        bgcolor: 'var(--color-bg-warm)',
         borderRadius: 2,
         px: { xs: 3, md: 5 },
         py: { xs: 4, md: 6 },
@@ -32,7 +32,7 @@ function ProjectsSection() {
       <Grid container spacing={2} sx={{ mb: 3 }}>
         {PLACEHOLDER_PROJECTS.map((title) => (
           <Grid key={title} size={{ xs: 12, md: 6 }}>
-            <Card sx={{ bgcolor: 'var(--color-bg-primary)', boxShadow: 'none', border: '1px solid var(--color-text-muted)' }}>
+            <Card sx={{ bgcolor: 'var(--color-bg-primary)', boxShadow: 'none', border: '1px solid var(--color-taupe-light)' }}>
               <CardContent>
                 <Typography sx={{ color: 'var(--color-text-primary)', fontWeight: 600 }}>
                   {title}
@@ -47,13 +47,13 @@ function ProjectsSection() {
           variant="outlined"
           onClick={() => navigate('/projects')}
           sx={{
-            borderColor: 'var(--color-link)',
-            color: 'var(--color-link)',
+            borderColor: 'var(--color-taupe-dark)',
+            color: 'var(--color-taupe-dark)',
             transition: 'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
             '&:hover': {
-              borderColor: 'var(--color-link-hover)',
-              color: 'var(--color-link-hover)',
-              bgcolor: 'var(--color-accent-blue-bg)',
+              borderColor: 'var(--color-secondary)',
+              color: 'var(--color-secondary)',
+              bgcolor: 'var(--color-bg-primary)',
             },
           }}
         >
