@@ -8,8 +8,7 @@ function ContactSection() {
   return (
     <Box
       sx={{
-        bgcolor: 'var(--color-bg-primary)',
-        border: '1px solid var(--color-text-muted)',
+        bgcolor: 'var(--color-accent-blue-bg)',
         borderRadius: 2,
         px: { xs: 3, md: 5 },
         py: { xs: 4, md: 6 },

@@ -23,6 +23,11 @@
   --color-link: #0F6AB5;
   --color-link-hover: #0054A8;
 
+  /* Secondary Accent Colors (IKEA 홈페이지 보조톤 참고 추가) */
+  --color-accent-green: #4C7A5E;
+  --color-accent-green-bg: #EAF1EC;
+  --color-accent-blue-bg: #EAF3FB;
+
   color-scheme: light dark;
 }
 
@@ -37,6 +42,9 @@
     --color-primary-dark: #C7A800;
     --color-link: #4DA3E0;
     --color-link-hover: #7FC0F0;
+    --color-accent-green: #6FA787;
+    --color-accent-green-bg: #1E2B24;
+    --color-accent-blue-bg: #182430;
   }
 }
 
@@ -50,6 +58,9 @@
   --color-primary-dark: #C7A800;
   --color-link: #4DA3E0;
   --color-link-hover: #7FC0F0;
+  --color-accent-green: #6FA787;
+  --color-accent-green-bg: #1E2B24;
+  --color-accent-blue-bg: #182430;
 }
 
 /* CSS 초기화 */

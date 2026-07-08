@@ -2,8 +2,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 function AboutMeSection() {
+  const navigate = useNavigate();
+
   return (
     <Card
       sx={{
@@ -26,6 +29,7 @@ function AboutMeSection() {
         <Button
           variant="contained"
           disableElevation
+          onClick={() => navigate('/about')}
           sx={{
             bgcolor: 'var(--color-button-primary)',
             color: 'var(--color-accent)',

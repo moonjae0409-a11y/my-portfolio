@@ -4,10 +4,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import { useNavigate } from 'react-router-dom';
 
 const PLACEHOLDER_PROJECTS = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
 
 function ProjectsSection() {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -42,10 +45,16 @@ function ProjectsSection() {
       <Box sx={{ textAlign: 'center' }}>
         <Button
           variant="outlined"
+          onClick={() => navigate('/projects')}
           sx={{
             borderColor: 'var(--color-link)',
             color: 'var(--color-link)',
-            '&:hover': { borderColor: 'var(--color-link-hover)', color: 'var(--color-link-hover)' },
+            transition: 'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
+            '&:hover': {
+              borderColor: 'var(--color-link-hover)',
+              color: 'var(--color-link-hover)',
+              bgcolor: 'var(--color-accent-blue-bg)',
+            },
           }}
         >
           더 보기
