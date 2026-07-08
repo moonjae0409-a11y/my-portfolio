@@ -30,10 +30,19 @@ function ContactSection() {
         <TextField label="메시지" size="small" fullWidth multiline rows={3} />
         <Button
           variant="contained"
+          disableElevation
           sx={{
             bgcolor: 'var(--color-button-primary)',
             color: 'var(--color-accent)',
-            '&:hover': { bgcolor: 'var(--color-button-hover)' },
+            transition: 'background-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease',
+            '&:hover': {
+              bgcolor: 'var(--color-button-hover)',
+              boxShadow: '0 4px 12px rgba(224, 192, 0, 0.5)',
+              transform: 'translateY(-1px)',
+            },
+            '&:active': {
+              transform: 'translateY(0)',
+            },
           }}
         >
           보내기

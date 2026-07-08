@@ -28,13 +28,14 @@ function IdeaSection() {
           <Grid key={idea} size={{ xs: 12, md: 4 }}>
             <Box
               sx={{
-                bgcolor: 'var(--color-primary-light)',
-                borderRadius: 2,
+                bgcolor: 'var(--color-bg-primary)',
+                borderTop: '3px solid var(--color-primary)',
+                borderRadius: 1,
                 height: 140,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: 'var(--color-accent)',
+                color: 'var(--color-text-secondary)',
               }}
             >
               Idea {idea}

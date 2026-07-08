@@ -22,8 +22,9 @@ function Navigation() {
       position="sticky"
       elevation={0}
       sx={{
-        bgcolor: 'var(--color-primary)',
-        color: 'var(--color-accent)',
+        bgcolor: 'var(--color-bg-primary)',
+        borderBottom: '1px solid var(--color-bg-secondary)',
+        color: 'var(--color-text-primary)',
       }}
     >
       <Toolbar sx={{ justifyContent: 'space-between', px: { xs: 2, md: 4 } }}>
@@ -33,7 +34,7 @@ function Navigation() {
           to="/"
           sx={{
             fontWeight: 700,
-            color: 'var(--color-accent)',
+            color: 'var(--color-secondary)',
             textDecoration: 'none',
           }}
         >
@@ -41,11 +42,11 @@ function Navigation() {
         </Typography>
         <Tabs
           value={currentTab}
-          textColor="inherit"
           sx={{
             minHeight: 0,
             '& .MuiTabs-indicator': {
-              backgroundColor: 'var(--color-accent)',
+              backgroundColor: 'var(--color-primary)',
+              height: 3,
             },
           }}
         >
@@ -56,10 +57,18 @@ function Navigation() {
               value={item.path}
               component={Link}
               to={item.path}
+              disableRipple={false}
               sx={{
                 fontWeight: 600,
-                color: 'var(--color-accent)',
+                color: 'var(--color-text-secondary)',
                 minHeight: 0,
+                transition: 'color 0.2s ease',
+                '&:hover': {
+                  color: 'var(--color-link)',
+                },
+                '&.Mui-selected': {
+                  color: 'var(--color-text-primary)',
+                },
               }}
             />
           ))}
