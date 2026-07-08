@@ -1,0 +1,75 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #FFDB00;
+  --color-primary-light: #FFE94D;
+  --color-primary-dark: #E0C000;
+
+  /* Secondary Colors */
+  --color-secondary: #0054A8;
+  --color-accent: #0C0C0C;
+
+  /* Background Colors */
+  --color-bg-primary: #FFFEFB;
+  --color-bg-secondary: #F5F4EF;
+
+  /* Text Colors */
+  --color-text-primary: #0C0C0C;
+  --color-text-secondary: #4A4A46;
+  --color-text-muted: #8A8A82;
+
+  /* Interactive Colors */
+  --color-button-primary: #FFDB00;
+  --color-button-hover: #E0C000;
+  --color-link: #0F6AB5;
+  --color-link-hover: #0054A8;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #1A1A1A;
+    --color-bg-secondary: #262626;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #C7C7C0;
+    --color-text-muted: #8A8A82;
+    --color-primary: #FFDB00;
+    --color-primary-dark: #C7A800;
+    --color-link: #4DA3E0;
+    --color-link-hover: #7FC0F0;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-bg-primary: #1A1A1A;
+  --color-bg-secondary: #262626;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #C7C7C0;
+  --color-text-muted: #8A8A82;
+  --color-primary: #FFDB00;
+  --color-primary-dark: #C7A800;
+  --color-link: #4DA3E0;
+  --color-link-hover: #7FC0F0;
+}
+
+/* CSS 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
